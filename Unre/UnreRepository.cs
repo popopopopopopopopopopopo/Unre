@@ -17,7 +17,16 @@ namespace Unre
         }
 
         private static UnreRepository<T> GetInstance() => _myInstance ?? (_myInstance = new UnreRepository<T>());
-        
+
+        public UnreRepository() { }
+
+        public UnreRepository(int maxUndo = 5, int maxRedo = 5, bool isDisposeRemovedState = true)
+        {
+            MaxUndoStack = maxUndo;
+            MaxRedoStack = maxRedo;
+            IsDisposeRemovedState = isDisposeRemovedState;
+        }
+
         public LinkedList<T> UndoList { get; set; } = new LinkedList<T>();
 
         public LinkedList<T> RedoList { get; set; } = new LinkedList<T>();
@@ -28,7 +37,7 @@ namespace Unre
 
         public int MaxRedoStack { get; set; } = 5;
 
-        public bool IsRemovingRequireDispose { get; set; } = true;
+        public bool IsDisposeRemovedState { get; set; } = true;
 
         public bool IsStateEmpty
         {
@@ -57,7 +66,7 @@ namespace Unre
                 addEntity = State;
             }
             State = entity;
-            if (MaxUndoStack <= UndoList.Count) UndoList.RemoveLast(IsRemovingRequireDispose);
+            if (MaxUndoStack <= UndoList.Count) UndoList.RemoveLast(IsDisposeRemovedState);
             UndoList.AddFirst(addEntity);
             if (RedoList.Any()) RedoList.Clear();
 
@@ -70,8 +79,8 @@ namespace Unre
             {
                 var tOut = UndoList.First.Value;
                 UndoList.RemoveFirst();
-                if(MaxRedoStack <= RedoList.Count) RedoList.RemoveLast(IsRemovingRequireDispose);
-                if(!IsStateEmpty) RedoList.AddFirst(State);
+                if (MaxRedoStack <= RedoList.Count) RedoList.RemoveLast(IsDisposeRemovedState);
+                if (!IsStateEmpty) RedoList.AddFirst(State);
                 State = tOut;
                 return tOut;
             }
@@ -84,7 +93,7 @@ namespace Unre
             {
                 var tOut = RedoList.First.Value;
                 RedoList.RemoveFirst();
-                if(MaxUndoStack <= UndoList.Count) UndoList.RemoveLast(IsRemovingRequireDispose);
+                if (MaxUndoStack <= UndoList.Count) UndoList.RemoveLast(IsDisposeRemovedState);
                 if (!IsStateEmpty) UndoList.AddFirst(State);
                 State = tOut;
 
@@ -92,5 +101,11 @@ namespace Unre
             }
             return entity ?? null;
         }
+
+        public void SetMaxUndo(int max) => MaxUndoStack = max;
+
+        public void SetMaxRedo(int max) => MaxRedoStack = max;
+
+        public void SetIsDisposeRequire(bool isRequire) => IsDisposeRemovedState = isRequire;
     }
 }
