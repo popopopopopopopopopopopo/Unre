@@ -52,4 +52,4 @@ MIT
 
 Who is using this?
 ---------------------
-Unre is in production use at [FOCUS2]().
+Unre is in production use at some enterprise systems.
