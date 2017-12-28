@@ -8,12 +8,9 @@ Release Notes
 
 [Located at Unre](https://github.com/popopopopopopopopopopopo/Unre)
 
-
 Features
 --------
-Unre is a [NuGet library](https://www.nuget.org/packages/Unre) that you can add in to your project that will extend your `T where T : class` class.
-
-It provides 3 helpers:
+Unre is a [NuGet library](https://www.nuget.org/packages/Unre/) that you can add in to your project that will extend your `T where T : class` class.
 
 Execute Do/Undo/Redo a static Repository
 ------------------------------------------------------------
@@ -34,14 +31,16 @@ public class Person
 var person = new Person();
 var repo = UnreRepository<Person>.Instance;
 
-console.WriteLine(person.Id.ToString());
+Console.WriteLine(person.Id.ToString());
 repo.Do(person);
-repo.Do(new person());
-var undoedPerson = repo.Undo();
-console.WriteLine(undoedPerson.Id.ToString());
+repo.Do(new Person());
+var undoPerson = repo.Undo();
+Console.WriteLine(undoPerson.Id.ToString());
 
-var isEqual = undoedPerson.Equals(person);
-console.WriteLine(isEqual.ToString());
+var isEqual = undoPerson.Equals(person);
+Console.WriteLine(isEqual.ToString());
+
+Console.ReadKey();
 
 ```
 

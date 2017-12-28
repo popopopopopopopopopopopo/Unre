@@ -17,3 +17,5 @@
 /Samples/WpfAppUnreWithStaticRepository/obj
 /Unre/bin
 /Unre/obj
+/SamplesByNuget/ConsoleAppByNuget/bin/Debug
+/SamplesByNuget/ConsoleAppByNuget/obj
