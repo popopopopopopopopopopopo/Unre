@@ -19,3 +19,5 @@
 /Unre/obj
 /SamplesByNuget/ConsoleAppByNuget/bin/Debug
 /SamplesByNuget/ConsoleAppByNuget/obj
+/SamplesByNuget/AppInstanceRepositoryByNuget/bin/Debug
+/SamplesByNuget/AppInstanceRepositoryByNuget/obj/Debug
