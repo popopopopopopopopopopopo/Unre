@@ -13,6 +13,8 @@
     <RepositoryType>git</RepositoryType>
     <PackageTags>undo;redo;undo/redo</PackageTags>
     <PackageReleaseNotes>first release.(Not Implemented.)</PackageReleaseNotes>
+    <Authors>kosun</Authors>
+    <Company>kosun</Company>
   </PropertyGroup>
 
 </Project>

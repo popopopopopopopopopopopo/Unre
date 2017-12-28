@@ -53,19 +53,29 @@ namespace WpfAppUnreWithStaticExtension.ViewModels
                 CurrentEmployee.UserId = (_myCount += 1);
                 CurrentEmployee.Do();
                 Status = CurrentEmployee.UserId.ToString();
+                RaiseEachCanExecute();
             });
 
             RedoCommand = new DelegateCommand(() =>
             {
                 CurrentEmployee = CurrentEmployee.Redo();
                 Status = CurrentEmployee.UserId.ToString();
-            });
+                RaiseEachCanExecute();
+
+            },()=> CurrentEmployee != null && CurrentEmployee.IsCanRedo());
 
             UndoCommand = new DelegateCommand(() =>
             {
                 CurrentEmployee = CurrentEmployee.Undo();
                 Status = CurrentEmployee.UserId.ToString();
-            });
+                RaiseEachCanExecute();
+            },()=> CurrentEmployee != null && CurrentEmployee.IsCanUndo());
+        }
+
+        private void RaiseEachCanExecute()
+        {
+            UndoCommand?.RaiseCanExecuteChanged();
+            RedoCommand?.RaiseCanExecuteChanged();
         }
     }
 }

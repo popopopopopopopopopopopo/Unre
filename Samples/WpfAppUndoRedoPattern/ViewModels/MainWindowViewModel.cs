@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using Prism.Commands;
 using Prism.Mvvm;
 using WpfAppUndoRedoPattern.Models;
+using Unre;
 
 namespace WpfAppUndoRedoPattern.ViewModels
 {
@@ -52,19 +53,35 @@ namespace WpfAppUndoRedoPattern.ViewModels
                 emp.UserId = (_myCount += 1);
                 Repository.Do(emp);
                 Status = emp.UserId.ToString();
+                RaiseEachCanExecute();
+
             });
 
             RedoCommand = new DelegateCommand(() =>
             {
                 var emp = Repository.Redo();
                 Status = emp.UserId.ToString();
+                RaiseEachCanExecute();
             });
 
             UndoCommand = new DelegateCommand(() =>
             {
                 var emp = Repository.Undo();
                 Status = emp.UserId.ToString();
-            });
+                RaiseEachCanExecute();
+
+            }, ()=> Repository.IsCanUndo);
+        }
+
+        public MainWindowViewModel(DelegateCommand doCommand)
+        {
+            DoCommand = doCommand;
+        }
+
+        private void RaiseEachCanExecute()
+        {
+            UndoCommand?.RaiseCanExecuteChanged();
+            RedoCommand?.RaiseCanExecuteChanged();
         }
     }
 }

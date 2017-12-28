@@ -53,19 +53,28 @@ namespace WpfAppUnreWithInstanceRepository.ViewModels
                 emp.UserId = (_myCount += 1);
                 Repository.Do(emp);
                 Status = emp.UserId.ToString();
+                RaiseEachCanExecute();
             });
 
             RedoCommand = new DelegateCommand(() =>
             {
                 var emp = Repository.Redo();
                 Status = emp.UserId.ToString();
-            });
+                RaiseEachCanExecute();
+            }, ()=> Repository.IsCanRedo);
 
             UndoCommand = new DelegateCommand(() =>
             {
                 var emp = Repository.Undo();
                 Status = emp.UserId.ToString();
-            });
+                RaiseEachCanExecute();
+            }, ()=> Repository.IsCanUndo);
+        }
+
+        private void RaiseEachCanExecute()
+        {
+            UndoCommand?.RaiseCanExecuteChanged();
+            RedoCommand?.RaiseCanExecuteChanged();
         }
     }
 }

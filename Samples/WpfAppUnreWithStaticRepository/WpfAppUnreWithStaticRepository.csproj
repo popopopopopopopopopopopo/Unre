@@ -109,5 +109,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Unre\Unre.csproj">
+      <Project>{872D46CC-EB31-4336-8CA5-2046C5866F14}</Project>
+      <Name>Unre</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
