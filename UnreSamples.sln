@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2009
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Unre", "Unre\Unre.csproj", "{872D46CC-EB31-4336-8CA5-2046C5866F14}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Samples", "Samples", "{C42D9712-5ADC-4FF3-BA67-773C17A769D9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfAppUndoRedoPattern", "Samples\WpfAppUndoRedoPattern\WpfAppUndoRedoPattern.csproj", "{BFC4F64A-4CB8-458F-A3E4-D99A1FB15DE1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfAppUnreWithInstanceRepository", "Samples\WpfAppUnreWithInstanceRepository\WpfAppUnreWithInstanceRepository.csproj", "{1E72C1F6-B825-4479-95D4-CF62DFDC8A53}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfAppUnreWithStaticExtension", "Samples\WpfAppUnreWithStaticExtension\WpfAppUnreWithStaticExtension.csproj", "{10E90451-05B5-4DFD-B4A8-DD78E1EA2003}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfAppUnreWithStaticRepository", "Samples\WpfAppUnreWithStaticRepository\WpfAppUnreWithStaticRepository.csproj", "{F165DEE2-8DE9-472E-8465-838A7CF2DB99}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{872D46CC-EB31-4336-8CA5-2046C5866F14}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{872D46CC-EB31-4336-8CA5-2046C5866F14}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{872D46CC-EB31-4336-8CA5-2046C5866F14}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{872D46CC-EB31-4336-8CA5-2046C5866F14}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BFC4F64A-4CB8-458F-A3E4-D99A1FB15DE1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BFC4F64A-4CB8-458F-A3E4-D99A1FB15DE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BFC4F64A-4CB8-458F-A3E4-D99A1FB15DE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BFC4F64A-4CB8-458F-A3E4-D99A1FB15DE1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1E72C1F6-B825-4479-95D4-CF62DFDC8A53}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E72C1F6-B825-4479-95D4-CF62DFDC8A53}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E72C1F6-B825-4479-95D4-CF62DFDC8A53}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E72C1F6-B825-4479-95D4-CF62DFDC8A53}.Release|Any CPU.Build.0 = Release|Any CPU
+		{10E90451-05B5-4DFD-B4A8-DD78E1EA2003}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10E90451-05B5-4DFD-B4A8-DD78E1EA2003}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10E90451-05B5-4DFD-B4A8-DD78E1EA2003}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10E90451-05B5-4DFD-B4A8-DD78E1EA2003}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F165DEE2-8DE9-472E-8465-838A7CF2DB99}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F165DEE2-8DE9-472E-8465-838A7CF2DB99}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F165DEE2-8DE9-472E-8465-838A7CF2DB99}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F165DEE2-8DE9-472E-8465-838A7CF2DB99}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{BFC4F64A-4CB8-458F-A3E4-D99A1FB15DE1} = {C42D9712-5ADC-4FF3-BA67-773C17A769D9}
+		{1E72C1F6-B825-4479-95D4-CF62DFDC8A53} = {C42D9712-5ADC-4FF3-BA67-773C17A769D9}
+		{10E90451-05B5-4DFD-B4A8-DD78E1EA2003} = {C42D9712-5ADC-4FF3-BA67-773C17A769D9}
+		{F165DEE2-8DE9-472E-8465-838A7CF2DB99} = {C42D9712-5ADC-4FF3-BA67-773C17A769D9}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {35487A1D-A847-4F73-837F-44AB3557C7CB}
+	EndGlobalSection
+EndGlobal

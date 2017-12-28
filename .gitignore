@@ -1,0 +1,19 @@
+﻿################################################################################
+# この .gitignore ファイルは Microsoft(R) Visual Studio によって自動的に作成されました。
+################################################################################
+
+/.vs
+/packages
+/Samples/WpfAppUndoRedoPattern/bin/Debug
+/Samples/WpfAppUndoRedoPattern/obj
+/Samples/WpfAppUnreWithInstanceRepository/.vs
+/Samples/WpfAppUnreWithInstanceRepository/bin/Debug
+/Samples/WpfAppUnreWithInstanceRepository/obj
+/Samples/WpfAppUnreWithStaticExtension/.vs
+/Samples/WpfAppUnreWithStaticExtension/bin/Debug
+/Samples/WpfAppUnreWithStaticExtension/obj
+/Samples/WpfAppUnreWithStaticRepository/.vs/WpfAppUnreWithStaticRepository/v15
+/Samples/WpfAppUnreWithStaticRepository/bin/Debug
+/Samples/WpfAppUnreWithStaticRepository/obj
+/Unre/bin
+/Unre/obj

@@ -1,0 +1,19 @@
+﻿<Window x:Class="WpfAppUnreWithStaticExtension.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfAppUnreWithStaticExtension"
+        xmlns:vm="clr-namespace:WpfAppUnreWithStaticExtension.ViewModels"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525"
+        DataContext="{x:Static Member=vm:MainWindowViewModel.Instance}">
+    <Grid>
+        <StackPanel>
+            <TextBox Text="{Binding Status}"></TextBox>
+            <Button Command="{Binding UndoCommand}">Undo</Button>
+            <Button Command="{Binding DoCommand}">Do</Button>
+            <Button Command="{Binding RedoCommand}">Redo</Button>
+        </StackPanel>
+    </Grid>
+</Window>
