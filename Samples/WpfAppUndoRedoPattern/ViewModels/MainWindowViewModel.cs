@@ -5,9 +5,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Prism.Commands;
-using Prism.Mvvm;
 using WpfAppUndoRedoPattern.Models;
 using Unre;
+using Prism.Mvvm;
 
 namespace WpfAppUndoRedoPattern.ViewModels
 {
