@@ -92,3 +92,11 @@ MIT
 Who is using this?
 ---------------------
 Unre is in production use at some enterprise systems.
+
+How To Read
+---------------------
+
+An a ̄
+
+[ja-jp]
+あんあー
