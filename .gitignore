@@ -25,3 +25,8 @@
 /Samples/WpfAppUnreWithCommonCommandsRaise/bin/Debug
 /Samples/WpfAppUnreWithCommonCommandsRaise/obj
 /Unre.sln.DotSettings.user
+/Samples/WpfAppUndoRedoPattern/bin/Release
+/Samples/WpfAppUnreWithCommonCommandsRaise/bin/Release
+/Samples/WpfAppUnreWithInstanceRepository/bin/Release
+/Samples/WpfAppUnreWithStaticExtension/bin/Release
+/Samples/WpfAppUnreWithStaticRepository/bin/Release
