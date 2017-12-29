@@ -12,8 +12,47 @@ Features
 --------
 Unre is a [NuGet library](https://www.nuget.org/packages/Unre/) that you can add in to your project that will extend your `T where T : class` class.
 
-Execute Do/Undo/Redo a static Repository
+And,
+We are planning to update the document in the future.
+
+Execute Do/Undo/Redo a Instance Repository(Recommend)
 ------------------------------------------------------------
+
+```csharp
+public UnreRepository Repository = new UnreRepository<T>();
+```
+Example usage:
+
+```csharp
+public class Person
+{
+    public int? Age { get; set; }
+    public Guid Id { get; set; } = Guid.NewGuid();
+    public string Name { get; set; }
+}            
+
+var person = new Person();
+var repo = new UnreRepository<Person>();
+
+Console.WriteLine(person.Id.ToString());
+repo.Do(person);
+repo.Do(new Person());
+var undoPerson = repo.Undo();
+Console.WriteLine(undoPerson.Id.ToString());
+
+var isEqual = undoPerson.Equals(person);
+Console.WriteLine(isEqual.ToString());
+
+Console.ReadKey();
+
+```
+
+Execute Do/Undo/Redo a static Repository(Not Recommend)
+------------------------------------------------------------
+
+
+We recommend using this pattern under limited circumstances, 
+such as classes used only in one place.
 
 ```csharp
 public UnreRepository Repository = UnreRepository<T>.Instance;
