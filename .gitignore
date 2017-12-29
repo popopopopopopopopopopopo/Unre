@@ -21,3 +21,7 @@
 /SamplesByNuget/ConsoleAppByNuget/obj
 /SamplesByNuget/AppInstanceRepositoryByNuget/bin/Debug
 /SamplesByNuget/AppInstanceRepositoryByNuget/obj/Debug
+/Samples/WpfAppUnreWithCommonCommandsRaise/.vs
+/Samples/WpfAppUnreWithCommonCommandsRaise/bin/Debug
+/Samples/WpfAppUnreWithCommonCommandsRaise/obj
+/Unre.sln.DotSettings.user

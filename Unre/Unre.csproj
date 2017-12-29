@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>netstandard2.0;netstandard1.3;NET461;NET452;NET45</TargetFrameworks>
+    <TargetFrameworks>netstandard2.0;NET461;NET452;NET45;netcoreapp2.0</TargetFrameworks>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Copyright>2017 kosun</Copyright>
     <AssemblyVersion>0.0.0.1</AssemblyVersion>
