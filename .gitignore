@@ -30,3 +30,5 @@
 /Samples/WpfAppUnreWithInstanceRepository/bin/Release
 /Samples/WpfAppUnreWithStaticExtension/bin/Release
 /Samples/WpfAppUnreWithStaticRepository/bin/Release
+/DotNetCoreConsoleAppByNuget/bin/Debug/netcoreapp2.0
+/DotNetCoreConsoleAppByNuget/obj
