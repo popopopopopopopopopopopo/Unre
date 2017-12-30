@@ -81,6 +81,12 @@ namespace Unre
             return entity;
         }
 
+        public T Do(ref T toMapEntity, T entity, string raiseCommandGroupName = "")
+        {
+            toMapEntity = Do(entity);
+            return toMapEntity;
+        }
+
         public T Undo(T entity = null, string raiseCommandGroupName = "")
         {
             T returnState = null;
@@ -101,6 +107,13 @@ namespace Unre
             return returnState;
         }
 
+        public T Undo(ref T toMapEntity, T entity = null, string raiseCommandGroupName = "")
+        {
+            toMapEntity = Undo(entity, raiseCommandGroupName);
+
+            return toMapEntity;
+        }
+
         public T Redo(T entity = null, string raiseCommandGroupName = "")
         {
             T returnState = null;
@@ -119,6 +132,12 @@ namespace Unre
             ExecuteGroupsRaiseIsRequire(raiseCommandGroupName);
 
             return returnState;
+        }
+
+        public T Redo(ref T toMapEntity, T entity = null, string raiseCommandGroupName = "")
+        {
+            toMapEntity = Redo(entity, raiseCommandGroupName);
+            return toMapEntity;
         }
 
         public void SetMaxUndo(int max) => MaxUndoStack = max;

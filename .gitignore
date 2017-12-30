@@ -32,3 +32,5 @@
 /Samples/WpfAppUnreWithStaticRepository/bin/Release
 /DotNetCoreConsoleAppByNuget/bin/Debug/netcoreapp2.0
 /DotNetCoreConsoleAppByNuget/obj
+/WpfAppUnreWithReplaceInstanceToMapEntity/bin/Debug
+/WpfAppUnreWithReplaceInstanceToMapEntity/obj/Debug
