@@ -1,7 +1,15 @@
-﻿## Unre - a simple undo/redo library for .Net
+﻿## Unre - a simple undo/redo library for .Net On Multi-platform
 ========================================
 
 [![Build status](https://ci.appveyor.com/api/projects/status/Unrehogemoge)](https://ci.appvayor.com/api/Unrehogemoge)
+
+TargetFrameworks
+-------------
+^.Net Core2.0
+^.Net Standard2.0
+^.NET 4.5
+
+Multi-platform-oriented
 
 Release Notes
 -------------
