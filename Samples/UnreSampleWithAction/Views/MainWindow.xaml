@@ -1,0 +1,13 @@
+﻿<Window x:Class="UnreSampleWithAction.Views.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:prism="http://prismlibrary.com/"
+        prism:ViewModelLocator.AutoWireViewModel="True"
+        Title="{Binding Title}" Height="350" Width="525">
+    <StackPanel>
+        <TextBox Text="{Binding Status}"></TextBox>
+        <Button Command="{Binding UndoCommand}">Undo</Button>
+        <Button Command="{Binding DoCommand}">Do</Button>
+        <Button Command="{Binding RedoCommand}">Redo</Button>
+    </StackPanel>
+</Window>
