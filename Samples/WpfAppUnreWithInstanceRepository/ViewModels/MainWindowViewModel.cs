@@ -61,14 +61,14 @@ namespace WpfAppUnreWithInstanceRepository.ViewModels
                 var emp = Repository.Redo();
                 Status = emp.UserId.ToString();
                 RaiseEachCanExecute();
-            }, ()=> Repository.IsCanRedo);
+            }, () => Repository.IsCanRedo);
 
             UndoCommand = new DelegateCommand(() =>
             {
                 var emp = Repository.Undo();
                 Status = emp.UserId.ToString();
                 RaiseEachCanExecute();
-            }, ()=> Repository.IsCanUndo);
+            }, () => Repository.IsCanUndo);
         }
 
         private void RaiseEachCanExecute()

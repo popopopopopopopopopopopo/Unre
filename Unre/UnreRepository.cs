@@ -87,6 +87,13 @@ namespace Unre
             return toMapEntity;
         }
 
+        public T Do(T entity, Action<T> destAction, string raiseCommandGroupName = "")
+        {
+            var doResult = Do(entity, raiseCommandGroupName);
+            destAction(doResult);
+            return doResult;
+        }
+
         public T Undo(T entity = null, string raiseCommandGroupName = "")
         {
             T returnState = null;
@@ -114,6 +121,13 @@ namespace Unre
             return toMapEntity;
         }
 
+        public T Undo(Action<T> destAction, T entity = null, string raiseCommandGroupName = "")
+        {
+            var undoResult = Undo(entity, raiseCommandGroupName);
+            destAction?.Invoke(undoResult);
+            return undoResult;
+        }
+
         public T Redo(T entity = null, string raiseCommandGroupName = "")
         {
             T returnState = null;
@@ -138,6 +152,13 @@ namespace Unre
         {
             toMapEntity = Redo(entity, raiseCommandGroupName);
             return toMapEntity;
+        }
+
+        public T Redo(Action<T> destAction, T entity = null, string raiseCommandGroupName = "")
+        {
+            var redoResult = Redo(entity, raiseCommandGroupName);
+            destAction(redoResult);
+            return redoResult;
         }
 
         public void SetMaxUndo(int max) => MaxUndoStack = max;
@@ -186,7 +207,6 @@ namespace Unre
             {
                 SetGroupCommand(command, raiseExecuteMethodName, commandGroupName);
             }
-
             return this;
         }
 

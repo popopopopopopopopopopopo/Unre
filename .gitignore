@@ -34,3 +34,5 @@
 /DotNetCoreConsoleAppByNuget/obj
 /WpfAppUnreWithReplaceInstanceToMapEntity/bin/Debug
 /WpfAppUnreWithReplaceInstanceToMapEntity/obj/Debug
+/Samples/UnreSampleWithAction/bin/Debug
+/Samples/UnreSampleWithAction/obj
