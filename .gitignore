@@ -40,3 +40,8 @@
 /WpfAppUnreWithReplaceInstanceToMapEntity/bin/Release
 /WpfAppUnreWithReplaceInstanceToMapEntity/obj/Release/TempPE
 /WpfAppUnreWithReplaceInstanceToMapEntity/obj/Release
+/Samples/WpfAppUnreWithReplaceInstanceToMapEntity/bin/Debug
+/Samples/WpfAppUnreWithReplaceInstanceToMapEntity/bin/Release
+/Samples/WpfAppUnreWithReplaceInstanceToMapEntity/obj
+/SamplesByNuget/DotNetCoreConsoleAppByNuget/bin/Debug/netcoreapp2.0
+/SamplesByNuget/DotNetCoreConsoleAppByNuget/obj

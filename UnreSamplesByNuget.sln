@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleAppByNuget", "Sample
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppInstanceRepositoryByNuget", "SamplesByNuget\AppInstanceRepositoryByNuget\AppInstanceRepositoryByNuget.csproj", "{95E4AD23-A658-46E0-AC84-04A16B619B97}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetCoreConsoleAppByNuget", "DotNetCoreConsoleAppByNuget\DotNetCoreConsoleAppByNuget.csproj", "{B504308D-0173-4FE7-84BA-7A15B514BCB7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNetCoreConsoleAppByNuget", "SamplesByNuget\DotNetCoreConsoleAppByNuget\DotNetCoreConsoleAppByNuget.csproj", "{1E125BE0-BE92-4FEC-8D4A-4F48B4BC631B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,10 +25,10 @@ Global
 		{95E4AD23-A658-46E0-AC84-04A16B619B97}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{95E4AD23-A658-46E0-AC84-04A16B619B97}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{95E4AD23-A658-46E0-AC84-04A16B619B97}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B504308D-0173-4FE7-84BA-7A15B514BCB7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B504308D-0173-4FE7-84BA-7A15B514BCB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B504308D-0173-4FE7-84BA-7A15B514BCB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B504308D-0173-4FE7-84BA-7A15B514BCB7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1E125BE0-BE92-4FEC-8D4A-4F48B4BC631B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E125BE0-BE92-4FEC-8D4A-4F48B4BC631B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E125BE0-BE92-4FEC-8D4A-4F48B4BC631B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E125BE0-BE92-4FEC-8D4A-4F48B4BC631B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -36,7 +36,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{869B1B69-FCBC-4584-B800-E32F55A9BF93} = {C42D9712-5ADC-4FF3-BA67-773C17A769D9}
 		{95E4AD23-A658-46E0-AC84-04A16B619B97} = {C42D9712-5ADC-4FF3-BA67-773C17A769D9}
-		{B504308D-0173-4FE7-84BA-7A15B514BCB7} = {C42D9712-5ADC-4FF3-BA67-773C17A769D9}
+		{1E125BE0-BE92-4FEC-8D4A-4F48B4BC631B} = {C42D9712-5ADC-4FF3-BA67-773C17A769D9}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {35487A1D-A847-4F73-837F-44AB3557C7CB}
