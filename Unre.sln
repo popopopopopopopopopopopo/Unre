@@ -9,6 +9,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionItems", "SolutionIt
 	ProjectSection(SolutionItems) = preProject
 		License = License
 		README.md = README.md
+		SetCommandsAndRaise.md = SetCommandsAndRaise.md
+		WithAction.md = WithAction.md
 	EndProjectSection
 EndProject
 Global
