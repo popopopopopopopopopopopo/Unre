@@ -4,15 +4,18 @@
     <TargetFrameworks>netstandard2.0;NET461;NET452;NET45;netcoreapp2.0</TargetFrameworks>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Copyright>2017 kosun</Copyright>
-    <AssemblyVersion>0.0.0.2</AssemblyVersion>
-    <FileVersion>0.0.0.2</FileVersion>
+    <AssemblyVersion>0.0.0.3</AssemblyVersion>
+    <FileVersion>0.0.0.3</FileVersion>
     <Description>a simple undo/redo library for .Net</Description>
-    <Version>0.0.0.2</Version>
+    <Version>0.0.0.3</Version>
     <PackageProjectUrl>https://github.com/popopopopopopopopopopopo/Unre</PackageProjectUrl>
     <RepositoryUrl>https://github.com/popopopopopopopopopopopo/Unre</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageTags>undo;redo;undo/redo</PackageTags>
-    <PackageReleaseNotes>0.0.0.2 release.(Not Implemented.)</PackageReleaseNotes>
+    <PackageReleaseNotes>0.0.0.3 release.
+
+Do/Undo/Redo With CommandRaiseExecute.
+Do/Undo/Redo With Action.</PackageReleaseNotes>
     <Authors>kosun</Authors>
     <Company>kosun</Company>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
